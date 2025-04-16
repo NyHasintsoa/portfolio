@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth font-main">
+<html lang="fr" class="scroll-smooth font-main">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Portfolio | Ny Aina Hasintsoa</title>
-    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="./assets/css/output.css" />
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Ny Aina hasintsoa">
+    <meta name="copyright" content="Copyright (c) 2025 Ny Aina hasintsoa">
+    <meta name="description"content="Ny Aina hasintoa, Développeur Web Junior Passionné" />
+    <meta name="keywords" content="Développeur Web Junior, ReactJs, Spring Boot, Git, Antananarivo Madagasikara">
+    <meta property="og:title" content="Ny Aina hasintsoa | Développeur Javascript | Java">
+    <meta property="og:description" content="Développeur Web Junior passionné pour l'informatique">
+    <title>Ny Aina Hasintsoa | Portfolio Développeur Web Junior</title>
+    <link rel="shortcut icon" href="./assets/favicon.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/output.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
@@ -26,59 +30,40 @@
       <spinning-dots style="width: 100px"></spinning-dots>
     </div>
 
-    <div
-      class="scrollToTop-btn flex justify-center items-center fixed bg-secondary text-white w-11 h-11 text-sm rounded-lg cursor-pointer"
-    >
+    <div class="scrollToTop-btn flex justify-center items-center fixed bg-secondary text-white w-11 h-11 text-sm rounded-lg cursor-pointer">
       <i class="fa-solid fa-arrow-up"></i>
     </div>
 
     <div class="fixed right-0 top-[100px] z-[999] t">
       <div class="relative py-3 flex theme-bar">
-        <div
-          class="show-theme-btn h-full py-3 pl-2 pr-1 rounded-l-md bg-transparent-color-1 backdrop-blur-xl dark:bg-dark-transparent-color-1 dark:text-white hover:text-white hover:bg-hover-primary cursor-pointer"
-        >
+        <div class="show-theme-btn h-full py-3 pl-2 pr-1 rounded-l-md bg-transparent-color-1 backdrop-blur-xl dark:bg-dark-transparent-color-1 dark:text-white hover:text-white hover:bg-hover-primary cursor-pointer">
           <i class="fa-solid fa-xl fa-caret-left"></i>
         </div>
         <div class="max-h-full">
-          <div
-            class="bg-transparent-color-1 dark:bg-dark-transparent-color-1 backdrop-blur-xl shadow-main dark:text-white"
-          >
+          <div class="bg-transparent-color-1 dark:bg-dark-transparent-color-1 backdrop-blur-xl shadow-main dark:text-white">
             <div class="py-3 mx-2 inline-block" id="text-theme">
               <i></i>
               <span class="ml-2"></span>
             </div>
           </div>
-          <ul
-            class="theme-list mt-2.5 mr-10 border-[1px] border-third rounded-md bg-white dark:bg-dark-transparent-color-1 backdrop-blur-xl duration-500"
-          >
-            <li
-              class="rounded-t-md py-3 px-3 text-primary dark:text-white hover:bg-hover-primary hover:text-white sun-btn cursor-pointer"
-            >
-              <i class="fa-solid fa-sun mr-2"></i> Light
+          <ul class="theme-list mt-2.5 mr-10 border border-third rounded-md bg-white dark:bg-dark-transparent-color-1 backdrop-blur-xl duration-500">
+            <li class="rounded-t-md py-3 px-3 text-primary dark:text-white hover:bg-hover-primary hover:text-white sun-btn cursor-pointer">
+              <i class="fa-solid fa-sun mr-2"></i> Clair
             </li>
-            <li
-              class="py-3 px-3 text-primary dark:text-white hover:bg-hover-primary hover:text-white moon-btn cursor-pointer"
-            >
-              <i class="fa-solid fa-moon mr-2"></i> Dark
+            <li class="py-3 px-3 text-primary dark:text-white hover:bg-hover-primary hover:text-white moon-btn cursor-pointer">
+              <i class="fa-solid fa-moon mr-2"></i> Sombre
             </li>
-            <li
-              class="rounded-b-md py-3 px-3 text-primary dark:text-white hover:bg-hover-primary hover:text-white default-btn active cursor-pointer"
-            >
-              <i class="fa-solid fa-desktop mr-2"></i> System
+            <li class="rounded-b-md py-3 px-3 text-primary dark:text-white hover:bg-hover-primary hover:text-white default-btn active cursor-pointer">
+              <i class="fa-solid fa-desktop mr-2"></i> Système
             </li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div
-      class="toast-container invisible fixed bottom-0 left-0 translate-x-4 sm:left-1/2 sm:-translate-x-1/2 z-[999999]"
-    >
+    <div class="toast-container invisible fixed bottom-0 left-0 translate-x-4 sm:left-1/2 sm:-translate-x-1/2 z-[999999]">
       <div class="py-4 lg:p-4">
-        <div
-          id="toastMessage"
-          class="ring-1 bg-white shadow-main rounded-lg overflow-hidden max-w-96 w-full pointer-events-auto p-4"
-        >
+        <div id="toastMessage" class="ring-1 bg-white shadow-main rounded-lg overflow-hidden max-w-96 w-full pointer-events-auto p-4">
           <div class="flex items-start">
             <div id="toastContent" class="flex items-start">
               <div class="shrink-0">
@@ -105,11 +90,7 @@
               </div>
             </div>
             <div class="flex shrink-0 ml-4">
-              <button
-                id="closeToastBtn"
-                type="button"
-                class="text-third bg-white rounded-md inline-flex"
-              >
+              <button id="closeToastBtn" type="button" class="text-third bg-white rounded-md inline-flex">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
@@ -130,70 +111,31 @@
     </div>
 
     <header class="z-[99999] fixed top-0 left-0 w-full backdrop-blur-xl px-10">
-      <div
-        class="navbar mx-auto relative h-20 flex justify-between items-center"
-      >
-        <a href="#" class="text-xl font-semibold text-primary dark:text-white"
-          >NamePortfolio</a
-        >
+      <div class="navbar mx-auto relative h-20 flex justify-between items-center">
+        <a href="" class="text-xl font-semibold text-primary dark:text-white">Ny Aina Hasintsoa</a>
         <div class="navigation">
-          <ul
-            class="nav-card flex shadow-main lg:shadow-none border-0 rounded-xl lg:rounded-none"
-          >
-            <a
-              type="button"
-              class="nav-close-btn absolute top-0 right-0 m-2.5 cursor-pointer block lg:hidden"
-            >
+          <ul class="nav-card flex shadow-main lg:shadow-none border-0 rounded-xl lg:rounded-none">
+            <a type="button" class="nav-close-btn absolute top-0 right-0 m-2.5 cursor-pointer block lg:hidden">
               <i class="fa-solid fa-times fa-xl dark:text-white"></i>
             </a>
             <li class="nav-item my-4 mx-12 lg:m-0">
-              <a
-                href="#home"
-                class="active font-medium text-base text-primary dark:text-white"
-                >Home</a
-              >
+              <a href="#home" class="active font-medium text-base text-primary dark:text-white">Accueil</a>
             </li>
             <li class="nav-item my-4 mx-12 lg:m-0">
-              <a
-                href="#about"
-                class="font-medium text-base text-primary dark:text-white"
-                >About</a
-              >
+              <a href="#about" class="font-medium text-base text-primary dark:text-white">A Propos</a>
             </li>
             <li class="nav-item my-4 mx-12 lg:m-0">
-              <a
-                href="#skills"
-                class="font-medium text-base text-primary dark:text-white"
-                >Skills</a
-              >
+              <a href="#skills" class="font-medium text-base text-primary dark:text-white">Compétences</a>
             </li>
             <li class="nav-item my-4 mx-12 lg:m-0">
-              <a
-                href="#services"
-                class="font-medium text-base text-primary dark:text-white"
-                >Services</a
-              >
+              <a href="#portfolio" class="font-medium text-base text-primary dark:text-white">Portfolio</a>
             </li>
             <li class="nav-item my-4 mx-12 lg:m-0">
-              <a
-                href="#portfolio"
-                class="font-medium text-base text-primary dark:text-white"
-                >Portfolio</a
-              >
-            </li>
-            <li class="nav-item my-4 mx-12 lg:m-0">
-              <a
-                href="#contact"
-                class="font-medium text-base text-primary dark:text-white"
-                >Contact</a
-              >
+              <a href="#contact" class="font-medium text-base text-primary dark:text-white">Contact</a>
             </li>
           </ul>
         </div>
-        <a
-          type="button"
-          class="nav-open-btn block dark:text-white lg:hidden cursor-pointer"
-        >
+        <a type="button" class="nav-open-btn block dark:text-white lg:hidden cursor-pointer">
           <i class="fa-solid fa-bars fa-xl dark:text-white"></i>
         </a>
       </div>
@@ -204,39 +146,23 @@
       id="home"
     >
       <div class="w-full">
-        <div class="info text-center">
-          <h2 class="dark:text-white text-6xl lg:text-7xl font-semibold">
-            Hi, I am Hasintsoa
+        <div class="info text-center mt-10 md:mt-0">
+          <h2 class="dark:text-white sm:text-xl text-2xl md:text-4xl lg:text-7xl font-semibold">
+            Bonjour, Je suis Hasintsoa
           </h2>
-          <h3
-            class="text-3xl my-3 font-semibold text-third dark:text-dark-third"
-          >
-            Web Developer
+          <h3 class="text-xl md:text-3xl my-1 lg:my-3 font-semibold text-third dark:text-dark-third">
+            Développeur Web Junior
           </h3>
-          <p class="text-third dark:text-dark-third text-sm lg:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Consequuntur eum, impedit libero necessitatibus omnis tempore.
-          </p>
-
-          <div
-            class="my-5 flex justify-center items-center gap-x-5 w-full icon-link"
-          >
-            <a
-              href="#"
-              class="border p-2.5 rounded-full border-secondary dark:border-white text-secondary dark:text-white hover:border-primary hover:bg-primary hover:text-white duration-300 dark:hover:bg-dark-secondary"
-            >
-              <i class="fa-brands fa-xl fa-facebook"></i>
-            </a>
-            <a
-              href="#"
-              class="border p-2.5 rounded-full border-secondary dark:border-white text-secondary dark:text-white hover:border-primary hover:bg-primary hover:text-white duration-300 dark:hover:bg-dark-secondary"
-            >
+          <div class="text-third dark:text-dark-third text-sm md:text-lg">
+            Développeur Web Junior avec une soif d'apprendre et une forte envie de créer des solutions web de qualité. Ce portfolio est un aperçu de mon parcours et de mes réalisations.
+            <h4 class="text-primary dark:text-white text-lg font-semibold mt-2 lg:mt-5">Bienvenue !</h4>
+          </div>
+          
+          <div class="my-5 flex justify-center items-center gap-x-5 w-full icon-link">
+            <a href="https://www.linkedin.com/in/ny-aina-hasintsoa-79b7b4304" class="border p-2.5 rounded-full border-secondary dark:border-white text-secondary dark:text-white hover:border-primary hover:bg-primary hover:text-white duration-300 dark:hover:bg-dark-secondary">
               <i class="fa-brands fa-xl fa-linkedin"></i>
             </a>
-            <a
-              href="#"
-              class="border p-2.5 rounded-full border-secondary dark:border-white text-secondary dark:text-white hover:border-primary hover:bg-primary hover:text-white duration-300 dark:hover:bg-dark-secondary"
-            >
+            <a href="https://github.com/NyHasintsoa" class="border p-2.5 rounded-full border-secondary dark:border-white text-secondary dark:text-white hover:border-primary hover:bg-primary hover:text-white duration-300 dark:hover:bg-dark-secondary">
               <i class="fa-brands fa-xl fa-github"></i>
             </a>
           </div>
@@ -244,592 +170,385 @@
       </div>
       <a
         href="#about"
-        class="scroll-down text-primary dark:text-white text-base font-medium mt-5"
+        class="scroll-down text-primary dark:text-white text-base font-medium md:mt-10"
       >
         Scroll Down
         <i class="fa-solid fa-arrow-down text-md text-secondary ms-1"></i>
       </a>
     </section>
 
-    <section id="about" class="mx-auto max-w-[1150px] pt-20 lg:pt-24 px-8 pb-8">
+    <section id="about" class="mx-auto max-w-[1150px] pt-16 lg:pt-20 px-8 lg:pb-8">
       <div class="relative flex justify-center items-center flex-col">
-        <h1 class="section-title-01">About Me</h1>
-        <h2 class="section-title-02 dark:text-white">About Me</h2>
-        <div
-          class="w-full grid row-y-5 lg:flex lg:justify-center lg:items-center lg:gap-x-10"
-        >
-          <div class="about-img mx-auto lg:mx-0">
+        <h1 class="section-title-01">A Propos</h1>
+        <h2 class="section-title-02 dark:text-white">A Propos</h2>
+        <div class="w-full grid row-y-5 lg:flex lg:justify-center lg:items-center lg:gap-x-10">
+          <div class="about-img mx-auto lg:mx-0 min-w-[250px]">
             <img
-              class="max-w-full lg:min-w-[500px] rounded-xl"
-              src="./assets/image/image_1.jpg"
-              alt=""
+              class="max-w-full rounded-xl"
+              src="./assets/image/profile-image.jpg"
+              alt="Image"
             />
           </div>
-          <div class="about-info">
-            <div class="description">
-              <h3 class="text-2xl font-semibold mb-2.5 dark:text-white">
-                I'm NamePortfolio
-              </h3>
-              <h4 class="text-xl font-semibold mb-2.5 dark:text-white">
-                A lead
-                <span class="text-secondary">Front-End Developer</span> based in
-                <span class="text-secondary">California</span>
-              </h4>
-              <p
-                class="text-third dark:text-dark-third text-base mb-3.5 pb-6 border-b-2 border-[#d7d7d7}"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad
-                deleniti, deserunt dolore ea fugiat ipsam itaque iure laudantium
-                maiores nulla placeat possimus provident quis ratione
-                repudiandae sequi veritatis voluptatum.
+          <div class="about-info my-5 lg:my-0">
+            <div class="pb-5 border-b-2 border-[#d7d7d7]">
+              <p class="text-third dark:text-dark-third text-base mt-2.5 pb-3 text-justify">
+                Dès mon plus jeune âge, mon parcours s'est naturellement orienté vers le secteur de l'informatique. En tant que développeur web junior passionné, la passion qui m'anime pour ce domaine, ainsi qu'une persévérance continue, ont été les principes fondamentaux de mon développement.
               </p>
+              <div class="flex flex-col md:flex-row justify-between">
+                <ul>
+                  <li class="my-3">
+                    <span class="font-semibold me-3 dark:text-white">Nom :</span>
+                    <span class="font-medium text-third dark:text-dark-third">RAMALANJAONA</span>
+                  </li>
+                  <li class="my-3">
+                    <span class="font-semibold me-3 dark:text-white">Prénom</span>
+                    <span class="font-medium text-third dark:text-dark-third">Ny Aina Hasintsoa</span>
+                  </li>
+                  <li class="my-3">
+                    <span class="font-semibold me-3 dark:text-white">Adresse</span>
+                    <span class="font-medium text-third dark:text-dark-third">Tananarive, Madagascar</span>
+                  </li>
+                </ul>
+                <ul>
+                  <li class="my-3">
+                    <span class="font-semibold me-3 dark:text-white">Email</span>
+                    <span class="font-medium text-third dark:text-dark-third">hasinaramalanjaona@gmail.com</span>
+                  </li>
+                  <li class="my-3">
+                    <span class="font-semibold me-3 dark:text-white">Github</span>
+                    <span class="font-medium text-third dark:text-dark-third">NyHasintsoa</span>
+                  </li>
+                  <li class="my-3">
+                    <span class="font-semibold me-3 dark:text-white">Téléphone</span>
+                    <span class="font-medium text-third dark:text-dark-third">+261 34 03 730 10</span>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <ul class="flex gap-x-8">
-              <li class="list-item">
-                <h3 class="text-[2.5em] font-bold dark:text-white">5+</h3>
-                <span class="text-third dark:text-dark-third text-sm"
-                  >Years of<br />Experience</span
-                >
-              </li>
-              <li class="list-item">
-                <h3 class="text-[2.5em] font-bold dark:text-white">3k+</h3>
-                <span class="text-third dark:text-dark-third text-sm"
-                  >Happy<br />Customers</span
-                >
-              </li>
-              <li class="list-item">
-                <h3 class="text-[2.5em] font-bold dark:text-white">5+</h3>
-                <span class="text-third dark:text-dark-third text-sm"
-                  >Success<br />Projects</span
-                >
-              </li>
-            </ul>
-            <a
-              href="#"
-              class="w-full text-center md:w-auto md:text-left font-medium bg-secondary text-white text-base inline-block mt-6 tracking-widest py-5 px-8 rounded-lg hover:bg-hover-primary"
-            >
-              Download CV <i class="fa-solid fa-download"></i>
+            <a href="/assets/document/CV_Hasintsoa.pdf" class="w-full text-center lg:w-auto font-medium bg-secondary text-white text-base inline-block mt-6 tracking-widest py-5 px-8 rounded-lg hover:bg-hover-primary">
+              Download CV 
+              <i class="fa-solid fa-download"></i>
             </a>
           </div>
         </div>
       </div>
     </section>
 
-    <section
-      class="mx-auto max-w-[1150px] pt-20 lg:pt-24 px-8 pb-8"
-      id="skills"
-    >
+    <section class="mx-auto max-w-[1150px] pt-20 lg:pt-24 px-8" id="skills">
       <div class="relative flex justify-center items-center flex-col">
-        <h1 class="section-title-01">Skills</h1>
-        <h2 class="section-title-02 dark:text-white">Skills</h2>
+        <h1 class="section-title-01 competence-section-title-01">Compétences</h1>
+        <h2 class="section-title-02 competence-section-title-02 dark:text-white">Compétences</h2>
         <div class="w-full">
           <div class="max-w-[700px] mb-12">
             <h3 class="text-[2em] font-semibold dark:text-white mb-1.5">
               Education & Skills
             </h3>
-            <p class="dark:text-white">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
-              et excepturi non officiis quam quo voluptate! Adipisci at
-              consequuntur eius eum expedita, laborum libero pariatur quam,
-              quasi, quidem sequi velit?
-            </p>
           </div>
           <div class="max-w-full grid grid-cols-main gap-5">
             <div class="mb-20">
               <h4 class="mb-1.5">
-                <label
-                  aria-label="skills"
-                  class="bg-secondary text-white text-base font-normal py-1.5 px-4 rounded-md"
-                  >Education</label
-                >
+                <label aria-label="langages" class="bg-secondary text-white text-base font-normal py-1.5 px-4 rounded-md">
+                  Langages
+                </label>
               </h4>
               <ul>
-                <li
-                  class="card dark:bg-dark-card-color bg-white shadow-main border-b-2 border-secondary rounded-md p-5 mt-3.5"
-                >
-                  <span class="text-sm mb-1.5 dark:text-white"
-                    >2020 - 2021</span
-                  >
-                  <p class="text-third dark:text-dark-third text-sm">
-                    <span
-                      class="text-primary dark:text-white text-base font-medium"
-                      >Lorem ipsum dolor sit</span
-                    >
-                    amet, consectetur adipisicing elit. Delectus, eveniet?
-                  </p>
-                </li>
-                <li
-                  class="card dark:bg-dark-card-color bg-white shadow-main border-b-2 border-secondary rounded-md p-5 mt-3.5"
-                >
-                  <span class="text-sm mb-1.5 dark:text-white"
-                    >2020 - 2021</span
-                  >
-                  <p class="text-third dark:text-dark-third text-sm">
-                    <span
-                      class="text-primary dark:text-white text-base font-medium"
-                      >Lorem ipsum dolor sit</span
-                    >
-                    amet, consectetur adipisicing elit. Delectus, eveniet?
-                  </p>
-                </li>
-                <li
-                  class="card dark:bg-dark-card-color bg-white shadow-main border-b-2 border-secondary rounded-md p-5 mt-3.5"
-                >
-                  <span class="text-sm mb-1.5 dark:text-white"
-                    >2020 - 2021</span
-                  >
-                  <p class="text-third dark:text-dark-third text-sm">
-                    <span
-                      class="text-primary dark:text-white text-base font-medium"
-                      >Lorem ipsum dolor sit</span
-                    >
-                    amet, consectetur adipisicing elit. Delectus, eveniet?
-                  </p>
-                </li>
-              </ul>
-            </div>
-            <div class="mb-20">
-              <h4 class="mb-1.5">
-                <label
-                  aria-label="skills"
-                  class="bg-secondary text-white text-base font-normal py-1.5 px-4 rounded-md"
-                  >Skills</label
-                >
-              </h4>
-              <ul>
-                <li
-                  class="bar dark:bg-dark-card-color shadow-main bg-white mb-2.5 p-5 rounded-md mt-3.5"
-                >
+                <li class="bar dark:bg-dark-card-color shadow-main bg-white mb-2.5 p-5 rounded-md mt-3.5">
                   <div class="flex justify-between items-center mb-1.5 text-sm">
-                    <span class="font-medium dark:text-white">HTML</span>
-                    <span class="font-medium dark:text-white">95%</span>
+                    <span class="font-medium dark:text-white">Java</span>
+                    <span class="font-medium dark:text-white">82%</span>
                   </div>
-                  <div
-                    class="line html relative w-full h-2 bg-[#c5cadf] rounded-sm"
-                  ></div>
+                  <div class="line before:w-[82%] relative w-full h-2 bg-[#c5cadf] rounded-sm"></div>
                 </li>
-                <li
-                  class="bar dark:bg-dark-card-color shadow-main bg-white mb-2.5 p-5 rounded-md mt-3.5"
-                >
-                  <div class="flex justify-between items-center mb-1.5 text-sm">
-                    <span class="font-medium dark:text-white">CSS</span>
-                    <span class="font-medium dark:text-white">85%</span>
-                  </div>
-                  <div
-                    class="line html relative w-full h-2 bg-[#c5cadf] rounded-sm"
-                  ></div>
-                </li>
-                <li
-                  class="bar dark:bg-dark-card-color shadow-main bg-white mb-2.5 p-5 rounded-md mt-3.5"
-                >
+                <li class="bar dark:bg-dark-card-color shadow-main bg-white mb-2.5 p-5 rounded-md mt-3.5">
                   <div class="flex justify-between items-center mb-1.5 text-sm">
                     <span class="font-medium dark:text-white">Javascript</span>
-                    <span class="font-medium dark:text-white">95%</span>
+                    <span class="font-medium dark:text-white">90%</span>
                   </div>
-                  <div
-                    class="line html relative w-full h-2 bg-[#c5cadf] rounded-sm"
-                  ></div>
+                  <div class="line before:w-[90%] relative w-full h-2 bg-[#c5cadf] rounded-sm"></div>
                 </li>
-                <li
-                  class="bar dark:bg-dark-card-color shadow-main bg-white mb-2.5 p-5 rounded-md mt-3.5"
-                >
-                  <div class="flex justify-between items-center mb-1.5 text-sm">
-                    <span class="font-medium dark:text-white">JQuery</span>
-                    <span class="font-medium dark:text-white">95%</span>
-                  </div>
-                  <div
-                    class="line html relative w-full h-2 bg-[#c5cadf] rounded-sm"
-                  ></div>
-                </li>
-                <li
-                  class="bar dark:bg-dark-card-color shadow-main bg-white mb-2.5 p-5 rounded-md mt-3.5"
-                >
+                <li class="bar dark:bg-dark-card-color shadow-main bg-white mb-2.5 p-5 rounded-md mt-3.5">
                   <div class="flex justify-between items-center mb-1.5 text-sm">
                     <span class="font-medium dark:text-white">PHP</span>
-                    <span class="font-medium dark:text-white">95%</span>
+                    <span class="font-medium dark:text-white">80%</span>
                   </div>
-                  <div
-                    class="line html relative w-full h-2 bg-[#c5cadf] rounded-sm"
-                  ></div>
+                  <div class="line before:w-[80%] relative w-full h-2 bg-[#c5cadf] rounded-sm"></div>
+                </li>
+                <li class="bar dark:bg-dark-card-color shadow-main bg-white mb-2.5 p-5 rounded-md mt-3.5">
+                  <div class="flex justify-between items-center mb-1.5 text-sm">
+                    <span class="font-medium dark:text-white">C#</span>
+                    <span class="font-medium dark:text-white">60%</span>
+                  </div>
+                  <div class="line before:w-[60%] relative w-full h-2 bg-[#c5cadf] rounded-sm"></div>
+                </li>
+                <li class="bar dark:bg-dark-card-color shadow-main bg-white mb-2.5 p-5 rounded-md mt-3.5">
+                  <div class="flex justify-between items-center mb-1.5 text-sm">
+                    <span class="font-medium dark:text-white">Python</span>
+                    <span class="font-medium dark:text-white">70%</span>
+                  </div>
+                  <div class="line before:w-[70%] relative w-full h-2 bg-[#c5cadf] rounded-sm"></div>
                 </li>
               </ul>
             </div>
             <div class="mb-20">
               <h4 class="mb-1.5">
-                <label
-                  aria-label="skills"
-                  class="bg-secondary text-white text-base font-normal py-1.5 px-4 rounded-md"
-                  >Awards</label
-                >
+                <label aria-label="frameworks" class="bg-secondary text-white text-base font-normal py-1.5 px-4 rounded-md">
+                  Frameworks et librairies
+                </label>
               </h4>
               <ul>
-                <li
-                  class="card dark:bg-dark-card-color bg-white shadow-main border-b-2 border-secondary rounded-md p-5 mt-3.5"
-                >
-                  <span class="text-sm dark:text-white mb-1.5">2020</span>
-                  <p class="text-third dark:text-dark-third text-sm">
-                    <span
-                      class="text-primary dark:text-white text-base font-medium"
-                      >Lorem ipsum dolor sit</span
-                    >
-                    amet, consectetur adipisicing elit. Delectus, eveniet?
-                  </p>
+                <li class="bar dark:bg-dark-card-color shadow-main bg-white mb-2.5 p-5 rounded-md mt-3.5">
+                  <div class="flex justify-between items-center mb-1.5 text-sm">
+                    <span class="font-medium dark:text-white">Spring Boot</span>
+                    <span class="font-medium dark:text-white">85%</span>
+                  </div>
+                  <div class="line before:w-[85%] relative w-full h-2 bg-[#c5cadf] rounded-sm"></div>
                 </li>
-                <li
-                  class="card dark:bg-dark-card-color bg-white shadow-main border-b-2 border-secondary rounded-md p-5 mt-3.5"
-                >
-                  <span class="text-sm dark:text-white mb-1.5">2020</span>
-                  <p class="text-third dark:text-dark-third text-sm">
-                    <span
-                      class="text-primary dark:text-white text-base font-medium"
-                      >Lorem ipsum dolor sit</span
-                    >
-                    amet, consectetur adipisicing elit. Delectus, eveniet?
-                  </p>
+                <li class="bar dark:bg-dark-card-color shadow-main bg-white mb-2.5 p-5 rounded-md mt-3.5">
+                  <div class="flex justify-between items-center mb-1.5 text-sm">
+                    <span class="font-medium dark:text-white">Laravel</span>
+                    <span class="font-medium dark:text-white">67%</span>
+                  </div>
+                  <div class="line before:w-[67%] relative w-full h-2 bg-[#c5cadf] rounded-sm"></div>
                 </li>
-                <li
-                  class="card dark:bg-dark-card-color bg-white shadow-main border-b-2 border-secondary rounded-md p-5 mt-3.5"
-                >
-                  <span class="text-sm dark:text-white mb-1.5">2020</span>
-                  <p class="text-third dark:text-dark-third text-sm">
-                    <span
-                      class="text-primary dark:text-white text-base font-medium"
-                      >Lorem ipsum dolor sit</span
-                    >
-                    amet, consectetur adipisicing elit. Delectus, eveniet?
-                  </p>
+                <li class="bar dark:bg-dark-card-color shadow-main bg-white mb-2.5 p-5 rounded-md mt-3.5">
+                  <div class="flex justify-between items-center mb-1.5 text-sm">
+                    <span class="font-medium dark:text-white">Symfony</span>
+                    <span class="font-medium dark:text-white">75%</span>
+                  </div>
+                  <div class="line before:w-[75%] relative w-full h-2 bg-[#c5cadf] rounded-sm"></div>
+                </li>
+                <li class="bar dark:bg-dark-card-color shadow-main bg-white mb-2.5 p-5 rounded-md mt-3.5">
+                  <div class="flex justify-between items-center mb-1.5 text-sm">
+                    <span class="font-medium dark:text-white">React</span>
+                    <span class="font-medium dark:text-white">80%</span>
+                  </div>
+                  <div class="line before:w-[80%] relative w-full h-2 bg-[#c5cadf] rounded-sm"></div>
+                </li>
+                <li class="bar dark:bg-dark-card-color shadow-main bg-white mb-2.5 p-5 rounded-md mt-3.5">
+                  <div class="flex justify-between items-center mb-1.5 text-sm">
+                    <span class="font-medium dark:text-white">Express, Fastify</span>
+                    <span class="font-medium dark:text-white">85%</span>
+                  </div>
+                  <div class="line before:w-[85%] relative w-full h-2 bg-[#c5cadf] rounded-sm"></div>
+                </li>
+                <li class="bar dark:bg-dark-card-color shadow-main bg-white mb-2.5 p-5 rounded-md mt-3.5">
+                  <div class="flex justify-between items-center mb-1.5 text-sm">
+                    <span class="font-medium dark:text-white">Bootstrap, Tailwindcss</span>
+                    <span class="font-medium dark:text-white">85%</span>
+                  </div>
+                  <div class="line before:w-[85%] relative w-full h-2 bg-[#c5cadf] rounded-sm"></div>
+                </li>
+              </ul>
+            </div>
+            <div class="mb-20">
+              <h4 class="mb-1.5">
+                <label aria-label="databases" class="bg-secondary text-white text-base font-normal py-1.5 px-4 rounded-md">
+                  Base de données
+                </label>
+              </h4>
+              <ul>
+                <li class="bar dark:bg-dark-card-color shadow-main bg-white mb-2.5 p-5 rounded-md mt-3.5">
+                  <div class="flex justify-between items-center mb-1.5 text-sm">
+                    <span class="font-medium dark:text-white">MySQL</span>
+                    <span class="font-medium dark:text-white">95%</span>
+                  </div>
+                  <div class="line before:w-[95%] relative w-full h-2 bg-[#c5cadf] rounded-sm"></div>
+                </li>
+                <li class="bar dark:bg-dark-card-color shadow-main bg-white mb-2.5 p-5 rounded-md mt-3.5">
+                  <div class="flex justify-between items-center mb-1.5 text-sm">
+                    <span class="font-medium dark:text-white">PostgreSQL</span>
+                    <span class="font-medium dark:text-white">85%</span>
+                  </div>
+                  <div class="line before:w-[85%] relative w-full h-2 bg-[#c5cadf] rounded-sm"></div>
+                </li>
+                <li class="bar dark:bg-dark-card-color shadow-main bg-white mb-2.5 p-5 rounded-md mt-3.5">
+                  <div class="flex justify-between items-center mb-1.5 text-sm">
+                    <span class="font-medium dark:text-white">MongoDB</span>
+                    <span class="font-medium dark:text-white">70%</span>
+                  </div>
+                  <div class="line before:w-[70%] relative w-full h-2 bg-[#c5cadf] rounded-sm"></div>
+                </li>
+                <li class="bar dark:bg-dark-card-color shadow-main bg-white mb-2.5 p-5 rounded-md mt-3.5">
+                  <div class="flex justify-between items-center mb-1.5 text-sm">
+                    <span class="font-medium dark:text-white">Redis</span>
+                    <span class="font-medium dark:text-white">60%</span>
+                  </div>
+                  <div class="line before:w-[60%] relative w-full h-2 bg-[#c5cadf] rounded-sm"></div>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="max-w-[700px] mb-12">
-            <h3 class="text-[2em] mb-1.5 dark:text-white">
-              Education & Skills
-            </h3>
-          </div>
-          <div class="timeline relative mx-0">
-            <div class="relative w-full lg:w-3/6 py-5 pl-20 lg:px-16">
-              <div
-                class="timeline-icon border border-third flex justify-center items-center overflow-hidden w-12 h-12 bg-transparent-color-2 rounded-[50%] absolute left-0 lg:left-[auto] right-[auto] lg:right-[-27px]"
-              >
-                <img src="./assets/image/company/sg.png" alt="meta" />
+          <div class="flex flex-col lg:flex-row justify-between gap-3">
+            <div class="w-full">
+              <h3 class="text-[2em] font-semibold dark:text-white mb-6 text-center">
+                Formations
+              </h3>
+              <div class="relative lg:w-10/12 py-5 pl-20">
+                <div class="border border-third flex justify-center items-center overflow-hidden w-12 h-12 bg-transparent-color-2 rounded-[50%] absolute left-0">
+                  <img src="./assets/image/company/logo IS INFO.jpg" alt="meta" />
+                </div>
+                <div class="card dark:bg-dark-card-color bg-white shadow-main border-b-2 text-primary dark:text-white border-secondary rounded-md p-5">
+                  <h5 class="font-semibold">2021 - 2025</h5>
+                  <h6>Institut Supérieur d'Informatique</h6>
+                  <div class="text-xs mt-2">
+                    Licence professionnelle en informatique
+                  </div>
+                  <p class="text-sm text-third dark:text-dark-third mt-3">
+                    J'ai suivi des cours qui m'ont permis de me spécialisé en développement d'application web dans le cadre de mon stage et l'élaboration de ma mémoire de fin d'études
+                  </p>
+                </div>
               </div>
-              <div
-                class="card dark:bg-dark-card-color bg-white shadow-main border-b-2 text-primary dark:text-white border-secondary rounded-md p-5"
-              >
-                <h2>2020</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Accusantium, mollitia.
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="relative w-full lg:w-3/6 py-5 pl-20 lg:px-16 lg:left-2/4"
-            >
-              <div
-                class="timeline-icon border border-third flex justify-center items-center overflow-hidden w-12 h-12 bg-transparent-color-2 rounded-[50%] absolute left-0 lg:left-[-21px]"
-              >
-                <img src="./assets/image/company/logo IS INFO.jpg" alt="meta" />
-              </div>
-              <div
-                class="card dark:bg-dark-card-color bg-white shadow-main border-b-2 text-primary dark:text-white border-secondary rounded-md p-5"
-              >
-                <h2>2020</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Accusantium, mollitia.
-                </p>
+              <div class="relative lg:w-10/12 py-5 pl-20">
+                <div class="border border-third flex justify-center items-center w-12 h-12 bg-transparent-color-2 rounded-[50%] absolute left-0">
+                  <img src="./assets/image/company/isf.png" alt="meta" />
+                </div>
+                <div class="card dark:bg-dark-card-color bg-white shadow-main border-b-2 text-primary dark:text-white border-secondary rounded-md p-5">
+                  <h5 class="font-semibold">2020</h5>
+                  <h6>Institution Sainte Famille Mahamasina</h6>
+                  <div class="text-xs mt-2">
+                    Baccalauréat série C
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="w-full lg:w-3/6 relative py-5 pl-20 lg:px-16">
-              <div
-                class="timeline-icon border border-third flex justify-center items-center w-12 h-12 bg-transparent-color-2 rounded-[50%] absolute left-0 lg:left-[auto] right-[auto] lg:right-[-27px]"
-              >
-                <img src="./assets/image/company/isf.png" alt="meta" />
-              </div>
-              <div
-                class="card dark:bg-dark-card-color bg-white shadow-main border-b-2 text-primary dark:text-white border-secondary rounded-md p-5"
-              >
-                <h2>2020</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Accusantium, mollitia.
-                </p>
+            <div class="bg-primary dark:bg-white w-1 hidden md:block"></div>
+
+            <div class="w-full">
+              <h3 class="text-[2em] font-semibold dark:text-white mb-6 text-center">
+                Expérience Professionnelle
+              </h3>
+              <div class="relative lg:w-10/12 py-5 pl-20">
+                <div class="border border-third flex justify-center items-center overflow-hidden w-12 h-12 bg-transparent-color-2 rounded-[50%] absolute left-0">
+                  <img src="./assets/image/company/sg.png" alt="meta" />
+                </div>
+                <div class="card dark:bg-dark-card-color bg-white shadow-main border-b-2 text-primary dark:text-white border-secondary rounded-md p-5">
+                  <h5 class="font-semibold">Février 2024 - Août 2024</h5>
+                  <h6 class="">Société Générale Madagasikara</h6>
+                  <p class="text-sm text-third dark:text-dark-third mt-3">
+                    J'ai suivi un stage professionnel pour l'élaboration de ma mémoire de fin d'études
+                  </p>
+                </div>
               </div>
             </div>
           </div>
           <div class="py-20 mt-10">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
-              <div
-                class="mx-auto flex justify-center items-center flex-wrap gap-10 md:gap-x-20 lg:gap-x-28"
-              >
-                <img
-                  class="duration-300 ease-in-out hover:scale-150 w-12 h-12"
-                  src="./assets/image/tech/html.png"
-                  alt="html"
-                />
-                <img
-                  class="duration-300 ease-in-out hover:scale-150 w-12 h-12"
-                  src="./assets/image/tech/css.png"
-                  alt="css"
-                />
-                <img
-                  class="duration-300 ease-in-out hover:scale-150 w-12 h-12"
-                  src="./assets/image/tech/javascript.png"
-                  alt="javascript"
-                />
-                <img
-                  class="duration-300 ease-in-out hover:scale-150 w-12 h-12"
-                  src="./assets/image/tech/git.png"
-                  alt="git"
-                />
-                <img
-                  class="duration-300 ease-in-out hover:scale-150 w-12 h-12"
-                  src="./assets/image/tech/java.png"
-                  alt="java"
-                />
-                <img
-                  class="duration-300 ease-in-out hover:scale-150 w-10 h-9"
-                  src="./assets/image/tech/php.png"
-                  alt="php"
-                />
-                <img
-                  class="duration-300 ease-in-out hover:scale-150 w-12 h-12"
-                  src="./assets/image/tech/nodejs.png"
-                  alt="nodeJs"
-                />
-                <img
-                  class="duration-300 ease-in-out hover:scale-150 w-10 h-9"
-                  src="./assets/image/tech/bootstrap-logo.svg"
-                  alt="bootstrap"
-                />
-                <img
-                  class="duration-300 ease-in-out hover:scale-150 w-12 h-12"
-                  src="./assets/image/tech/tailwind.png"
-                  alt="tailwindcss"
-                />
-                <img
-                  class="duration-300 ease-in-out hover:scale-150 w-12 h-12"
-                  src="./assets/image/tech/reactjs.png"
-                  alt="react"
-                />
-                <img
-                  class="duration-300 ease-in-out hover:scale-150 w-20 h-9"
-                  src="./assets/image/tech/spring.png"
-                  alt="spring boot"
-                />
-                <img
-                  class="duration-300 ease-in-out hover:scale-150 w-12 h-12"
-                  src="./assets/image/tech/laravel.png"
-                  alt="Laravel"
-                />
-                <img
-                  class="duration-300 ease-in-out hover:scale-150 w-12 h-12"
-                  src="./assets/image/tech/mongodb.png"
-                  alt="mongoDb"
-                />
-                <img
-                  class="duration-300 ease-in-out hover:scale-150 w-12 h-12"
-                  src="./assets/image/tech/sql.png"
-                  alt="sql"
-                />
+              <div class="mx-auto flex justify-center items-center flex-wrap gap-10 md:gap-x-20 lg:gap-x-28">
+                <a href="https://developer.mozilla.org/fr/docs/Web/HTML">
+                  <img
+                    class="duration-300 ease-in-out hover:scale-150 w-12 h-12"
+                    src="./assets/image/tech/html.png"
+                    alt="html"
+                  />
+                </a>
+                <a href="https://developer.mozilla.org/fr/docs/Web/CSS">
+                  <img
+                    class="duration-300 ease-in-out hover:scale-150 w-12 h-12"
+                    src="./assets/image/tech/css.png"
+                    alt="css"
+                  />
+                </a>
+                <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript">
+                  <img
+                    class="duration-300 ease-in-out hover:scale-150 w-12 h-12"
+                    src="./assets/image/tech/javascript.png"
+                    alt="javascript"
+                  />
+                </a>
+                <a href="https://git-scm.com/">
+                  <img
+                    class="duration-300 ease-in-out hover:scale-150 w-12 h-12"
+                    src="./assets/image/tech/git.png"
+                    alt="git"
+                  />
+                </a>
+                <a href="https://www.java.com/">
+                  <img
+                    class="duration-300 ease-in-out hover:scale-150 w-12 h-12"
+                    src="./assets/image/tech/java.png"
+                    alt="java"
+                  />
+                </a>
+                <a href="https://www.php.net/">
+                  <img
+                    class="duration-300 ease-in-out hover:scale-150 w-10 h-9"
+                    src="./assets/image/tech/php.png"
+                    alt="php"
+                  />
+                </a>
+                <a href="https://nodejs.org/">
+                  <img
+                    class="duration-300 ease-in-out hover:scale-150 w-12 h-12"
+                    src="./assets/image/tech/nodejs.png"
+                    alt="nodeJs"
+                  />
+                </a>
+                <a href="https://getbootstrap.com/">
+                  <img
+                    class="duration-300 ease-in-out hover:scale-150 w-10 h-9"
+                    src="./assets/image/tech/bootstrap-logo.svg"
+                    alt="bootstrap"
+                  />
+                </a>
+                <a href="https://tailwindcss.com/">
+                  <img
+                    class="duration-300 ease-in-out hover:scale-150 w-12 h-12"
+                    src="./assets/image/tech/tailwind.png"
+                    alt="tailwindcss"
+                  />
+                </a>
+                <a href="https://react.dev/">
+                  <img
+                    class="duration-300 ease-in-out hover:scale-150 w-12 h-12"
+                    src="./assets/image/tech/reactjs.png"
+                    alt="react"
+                  />
+                </a>
+                <a href="https://spring.io/">
+                  <img
+                    class="duration-300 ease-in-out hover:scale-150 w-20 h-9"
+                    src="./assets/image/tech/spring.png"
+                    alt="spring boot"
+                  />
+                </a>
+                <a href="https://symfony.com/">
+                  <svg fill="currentColor" class="dark:text-white duration-300 ease-in-out hover:scale-150 w-12 h-12" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 12c0 6.628-5.372 12-12 12S0 18.628 0 12 5.372 0 12 0s12 5.372 12 12zm-6.753-7.561c-1.22.042-2.283.715-3.075 1.644-.878 1.02-1.461 2.229-1.881 3.461-.753-.614-1.332-1.414-2.539-1.761-.966-.297-2.015-.105-2.813.514-.41.319-.71.757-.861 1.254-.36 1.176.381 2.225.719 2.6l.737.79c.15.154.519.56.339 1.138-.193.631-.951 1.037-1.732.799-.348-.106-.848-.366-.734-.73.045-.15.152-.263.21-.391.052-.11.077-.194.095-.242.141-.465-.053-1.07-.551-1.223-.465-.143-.939-.03-1.125.566-.209.68.117 1.913 1.86 2.449 2.04.628 3.765-.484 4.009-1.932.153-.907-.255-1.582-1.006-2.447l-.612-.677c-.371-.37-.497-1.002-.114-1.485.324-.409.785-.584 1.539-.379 1.103.3 1.594 1.063 2.412 1.68-.338 1.11-.56 2.223-.759 3.222l-.123.746c-.585 3.07-1.033 4.757-2.194 5.726-.234.166-.57.416-1.073.434-.266.005-.352-.176-.355-.257-.006-.184.15-.271.255-.353.154-.083.39-.224.372-.674-.016-.532-.456-.994-1.094-.973-.477.017-1.203.465-1.176 1.286.028.85.819 1.485 2.012 1.444.638-.021 2.062-.281 3.464-1.949 1.633-1.911 2.09-4.101 2.434-5.706l.383-2.116c.213.024.441.042.69.048 2.032.044 3.049-1.01 3.064-1.776.01-.464-.304-.921-.744-.91-.386.009-.718.278-.806.654-.094.428.646.813.068 1.189-.41.266-1.146.452-2.184.3l.188-1.042c.386-1.976.859-4.407 2.661-4.467.132-.007.612.006.623.323.003.105-.022.134-.147.375-.115.155-.174.345-.168.537.017.504.4.836.957.816.743-.023.955-.748.945-1.119-.032-.874-.952-1.424-2.17-1.386z"/>
+                  </svg>
+                </a>
+                <a href="https://laravel.com/">
+                  <img
+                    class="duration-300 ease-in-out hover:scale-150 w-12 h-12"
+                    src="./assets/image/tech/laravel.png"
+                    alt="Laravel"
+                  />
+                </a>
+                <a href="https://github.com/">
+                  <svg class="dark:text-white duration-300 ease-in-out hover:scale-150 w-12 h-12" viewBox="0 -3.5 256 256" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">
+                  <g fill="currentColor">
+                    <path d="M127.505 0C57.095 0 0 57.085 0 127.505c0 56.336 36.534 104.13 87.196 120.99 6.372 1.18 8.712-2.766 8.712-6.134 0-3.04-.119-13.085-.173-23.739-35.473 7.713-42.958-15.044-42.958-15.044-5.8-14.738-14.157-18.656-14.157-18.656-11.568-7.914.872-7.752.872-7.752 12.804.9 19.546 13.14 19.546 13.14 11.372 19.493 29.828 13.857 37.104 10.6 1.144-8.242 4.449-13.866 8.095-17.05-28.32-3.225-58.092-14.158-58.092-63.014 0-13.92 4.981-25.295 13.138-34.224-1.324-3.212-5.688-16.18 1.235-33.743 0 0 10.707-3.427 35.073 13.07 10.17-2.826 21.078-4.242 31.914-4.29 10.836.048 21.752 1.464 31.942 4.29 24.337-16.497 35.029-13.07 35.029-13.07 6.94 17.563 2.574 30.531 1.25 33.743 8.175 8.929 13.122 20.303 13.122 34.224 0 48.972-29.828 59.756-58.22 62.912 4.573 3.957 8.648 11.717 8.648 23.612 0 17.06-.148 30.791-.148 34.991 0 3.393 2.295 7.369 8.759 6.117 50.634-16.879 87.122-64.656 87.122-120.973C255.009 57.085 197.922 0 127.505 0"/>
+                    <path d="M47.755 181.634c-.28.633-1.278.823-2.185.389-.925-.416-1.445-1.28-1.145-1.916.275-.652 1.273-.834 2.196-.396.927.415 1.455 1.287 1.134 1.923M54.027 187.23c-.608.564-1.797.302-2.604-.589-.834-.889-.99-2.077-.373-2.65.627-.563 1.78-.3 2.616.59.834.899.996 2.08.36 2.65M58.33 194.39c-.782.543-2.06.034-2.849-1.1-.781-1.133-.781-2.493.017-3.038.792-.545 2.05-.055 2.85 1.07.78 1.153.78 2.513-.019 3.069M65.606 202.683c-.699.77-2.187.564-3.277-.488-1.114-1.028-1.425-2.487-.724-3.258.707-.772 2.204-.555 3.302.488 1.107 1.026 1.445 2.496.7 3.258M75.01 205.483c-.307.998-1.741 1.452-3.185 1.028-1.442-.437-2.386-1.607-2.095-2.616.3-1.005 1.74-1.478 3.195-1.024 1.44.435 2.386 1.596 2.086 2.612M85.714 206.67c.036 1.052-1.189 1.924-2.705 1.943-1.525.033-2.758-.818-2.774-1.852 0-1.062 1.197-1.926 2.721-1.951 1.516-.03 2.758.815 2.758 1.86M96.228 206.267c.182 1.026-.872 2.08-2.377 2.36-1.48.27-2.85-.363-3.039-1.38-.184-1.052.89-2.105 2.367-2.378 1.508-.262 2.857.355 3.049 1.398"/>
+                  </g>
+                  </svg>
+                </a>
+                <a href="https://www.mongodb.com/">
+                  <img
+                    class="duration-300 ease-in-out hover:scale-150 w-12 h-12"
+                    src="./assets/image/tech/mongodb.png"
+                    alt="mongoDb"
+                  />
+                </a>
+                <a href="https://sql.sh/">
+                  <img
+                    class="duration-300 ease-in-out hover:scale-150 w-12 h-12"
+                    src="./assets/image/tech/sql.png"
+                    alt="sql"
+                  />
+                </a>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section
-      class="mx-auto max-w-[1150px] pt-20 lg:pt-24 px-8 pb-8"
-      id="services"
-    >
-      <div class="relative flex justify-center items-center flex-col">
-        <h1 class="section-title-01">Services</h1>
-        <h2 class="section-title-02 dark:text-white">Services</h2>
-        <div class="w-full">
-          <h3 class="text-[2em] dark:text-white font-semibold mb-[50px]">
-            What I provide
-          </h3>
-          <ul class="max-w-full grid grid-cols-main gap-5 my-0 mx-auto">
-            <li>
-              <div
-                class="dark:bg-dark-card-color service-card bg-white border-b-2 border-secondary rounded-md shadow-main p-12"
-              >
-                <i
-                  class="fa-solid fa-pencil-ruler text-secondary text-5xl mb-8"
-                ></i>
-                <h3 class="text-2xl font-bold leading-8 mb-5 dark:text-white">
-                  UI/UX Consultancy
-                </h3>
-                <div
-                  class="learn-more-btn text-third dark:text-dark-third cursor-pointer"
-                >
-                  Learn More <i class="fa-solid fa-long-arrow-alt-right"></i>
-                </div>
-              </div>
-              <div
-                class="service-modal flex justify-center items-center fixed w-full top-0 left-0 bg-transparent h-screen backdrop-blur-md"
-              >
-                <div
-                  class="dark:bg-dark-modal-color service-modal-body relative bg-white max-w-[600px] m-5 p-10 rounded-xl shadow-main"
-                >
-                  <i
-                    class="fa-solid text-2xl fa-times modal-close-btn absolute top-0 right-0 cursor-pointer m-5 dark:text-white"
-                  ></i>
-                  <h3 class="text-4xl dark:text-white">Lorem ipsum dolor.</h3>
-                  <h4
-                    class="text-xl font-semibold dark:text-white mx-0 mt-4 mb-2.5"
-                  >
-                    Lorem ipsum dolor sit.
-                  </h4>
-                  <p class="dark:text-white">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Culpa doloribus eaque earum eos error hic maiores natus,
-                    odio recusandae repudiandae?
-                  </p>
-                  <h4 class="dark:text-white">Lorem ipsum dolor.</h4>
-                  <ul>
-                    <li class="mt-4 dark:text-white">
-                      <i class="fa-solid fa-check-circle text-secondary"></i>
-                      Lorem ipsum dolor sit amet.
-                    </li>
-                    <li class="mt-4 dark:text-white">
-                      <i class="fa-solid fa-check-circle text-secondary"></i>
-                      Lorem ipsum dolor sit amet.
-                    </li>
-                    <li class="mt-4 dark:text-white">
-                      <i class="fa-solid fa-check-circle text-secondary"></i>
-                      Lorem ipsum dolor sit amet.
-                    </li>
-                    <li class="mt-4 dark:text-white">
-                      <i class="fa-solid fa-check-circle text-secondary"></i>
-                      Lorem ipsum dolor sit amet.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div
-                class="dark:bg-dark-card-color service-card bg-white border-b-2 border-secondary rounded-md shadow-main p-12"
-              >
-                <i
-                  class="fa-solid fa-pencil-ruler text-secondary text-5xl mb-8"
-                ></i>
-                <h3 class="text-2xl font-bold leading-8 mb-5 dark:text-white">
-                  UI/UX Consultancy
-                </h3>
-                <div
-                  class="learn-more-btn text-third dark:text-dark-third cursor-pointer"
-                >
-                  Learn More <i class="fa-solid fa-long-arrow-alt-right"></i>
-                </div>
-              </div>
-              <div
-                class="service-modal flex justify-center items-center fixed w-full top-0 left-0 bg-transparent h-screen backdrop-blur-md"
-              >
-                <div
-                  class="dark:bg-dark-modal-color service-modal-body relative bg-white max-w-[600px] m-5 p-10 rounded-xl shadow-main"
-                >
-                  <i
-                    class="fa-solid text-2xl fa-times modal-close-btn absolute top-0 right-0 cursor-pointer m-5 dark:text-white"
-                  ></i>
-                  <h3 class="text-4xl dark:text-white">Lorem ipsum dolor.</h3>
-                  <h4
-                    class="text-xl font-semibold dark:text-white mx-0 mt-4 mb-2.5"
-                  >
-                    Lorem ipsum dolor sit.
-                  </h4>
-                  <p class="dark:text-white">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Culpa doloribus eaque earum eos error hic maiores natus,
-                    odio recusandae repudiandae?
-                  </p>
-                  <h4 class="dark:text-white">Lorem ipsum dolor.</h4>
-                  <ul>
-                    <li class="mt-4 dark:text-white">
-                      <i class="fa-solid fa-check-circle text-secondary"></i>
-                      Lorem ipsum dolor sit amet.
-                    </li>
-                    <li class="mt-4 dark:text-white">
-                      <i class="fa-solid fa-check-circle text-secondary"></i>
-                      Lorem ipsum dolor sit amet.
-                    </li>
-                    <li class="mt-4 dark:text-white">
-                      <i class="fa-solid fa-check-circle text-secondary"></i>
-                      Lorem ipsum dolor sit amet.
-                    </li>
-                    <li class="mt-4 dark:text-white">
-                      <i class="fa-solid fa-check-circle text-secondary"></i>
-                      Lorem ipsum dolor sit amet.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div
-                class="dark:bg-dark-card-color service-card bg-white border-b-2 border-secondary rounded-md shadow-main p-12"
-              >
-                <i
-                  class="fa-solid fa-pencil-ruler text-secondary text-5xl mb-8"
-                ></i>
-                <h3 class="text-2xl font-bold leading-8 mb-5 dark:text-white">
-                  UI/UX Consultancy
-                </h3>
-                <div
-                  class="learn-more-btn text-third dark:text-dark-third cursor-pointer"
-                >
-                  Learn More <i class="fa-solid fa-long-arrow-alt-right"></i>
-                </div>
-              </div>
-              <div
-                class="service-modal flex justify-center items-center fixed w-full top-0 left-0 bg-transparent h-screen backdrop-blur-md"
-              >
-                <div
-                  class="dark:bg-dark-modal-color service-modal-body relative bg-white max-w-[600px] m-5 p-10 rounded-xl shadow-main"
-                >
-                  <i
-                    class="fa-solid text-2xl fa-times modal-close-btn absolute top-0 right-0 cursor-pointer m-5 dark:text-white"
-                  ></i>
-                  <h3 class="text-4xl dark:text-white">Lorem ipsum dolor.</h3>
-                  <h4
-                    class="text-xl font-semibold dark:text-white mx-0 mt-4 mb-2.5"
-                  >
-                    Lorem ipsum dolor sit.
-                  </h4>
-                  <p class="dark:text-white">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Culpa doloribus eaque earum eos error hic maiores natus,
-                    odio recusandae repudiandae?
-                  </p>
-                  <h4 class="dark:text-white">Lorem ipsum dolor.</h4>
-                  <ul>
-                    <li class="mt-4 dark:text-white">
-                      <i class="fa-solid fa-check-circle text-secondary"></i>
-                      Lorem ipsum dolor sit amet.
-                    </li>
-                    <li class="mt-4 dark:text-white">
-                      <i class="fa-solid fa-check-circle text-secondary"></i>
-                      Lorem ipsum dolor sit amet.
-                    </li>
-                    <li class="mt-4 dark:text-white">
-                      <i class="fa-solid fa-check-circle text-secondary"></i>
-                      Lorem ipsum dolor sit amet.
-                    </li>
-                    <li class="mt-4 dark:text-white">
-                      <i class="fa-solid fa-check-circle text-secondary"></i>
-                      Lorem ipsum dolor sit amet.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-          </ul>
         </div>
       </div>
     </section>
@@ -845,138 +564,124 @@
           <div class="w-full grid grid-cols-main gap-9 my-0 mx-auto">
             <div class="img-card-container">
               <div
-                class="img-card relative max-w-full h-[360px] rounded-xl overflow-hidden cursor-pointer shadow-main"
+                class="img-card relative max-w-full h-[270px] rounded-xl overflow-hidden cursor-pointer shadow-main"
               >
                 <div class="overlay"></div>
                 <div class="info absolute bottom-0 left-0 text-white m-5">
-                  <h3 class="text-2xl">Web Design</h3>
-                  <span class="text-lg">youtube</span>
+                  <h3 class="text-2xl">G Stock App</h3>
                 </div>
                 <img
-                  class="w-full h-full object-cover"
-                  src="./assets/image/image_1.jpg"
+                  class="w-full h-full"
+                  src="./assets/image/g-stock-app.png"
                   alt="Image 7"
                 />
               </div>
-              <div
-                class="portfolio-modal z-[99999] fixed w-full top-0 left-0 h-[100vh] flex justify-center items-center backdrop-blur-[20px]"
-              >
-                <div
-                  class="portfolio-modal-body relative bg-white dark:bg-dark-modal-color max-w-[600px] m-5 p-10 rounded-xl shadow-main"
-                >
-                  <i
-                    class="dark:text-white text-2xl fa-solid fa-times portfolio-close-btn absolute top-0 right-0 m-5 cursor-pointer"
-                  ></i>
-                  <h3 class="text-2xl dark:text-white">Web Design</h3>
+              <div class="portfolio-modal z-[99999] fixed w-full top-0 left-0 h-[100vh] flex justify-center items-center backdrop-blur-[20px]">
+                <div class="portfolio-modal-body relative bg-white dark:bg-dark-modal-color max-w-[600px] m-5 p-10 rounded-xl shadow-main">
+                  <i class="dark:text-white hover:text-[#dc3545] text-2xl fa-solid fa-times portfolio-close-btn absolute top-0 right-0 m-5 cursor-pointer"></i>
+                  <div class="flex justify-between items-center">
+                    <h3 class="text-2xl dark:text-white">G Stock App</h3>
+                    <a href="https://github.com/NyHasintsoa/G-Stock-App" class="px-3 py-2.5 border border-third rounded-xl dark:text-white dark:hover:text-primary dark:hover:bg-white hover:text-white hover:bg-primary transition-colors duration-300">
+                      <i class="fa-brands fa-xl fa-github"></i>
+                      Code Source
+                    </a>
+                  </div>
                   <img
                     class="w-full my-5 rounded-xl"
-                    src="./assets/image/image_1.jpg"
-                    alt=""
+                    src="./assets/image/g-stock-app.png"
+                    alt="G Stock Project Image"
                   />
                   <p class="dark:text-white">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Aperiam at corporis dolor dolore doloribus eaque eos illo
-                    officiis sit vel! Accusamus, accusantium, culpa distinctio
-                    eligendi et itaque modi nam obcaecati odit possimus,
-                    reiciendis suscipit tempore tenetur!
+                    (projet personnel)
+                    <br>
+                    Conception d'une application web pour la géstion des produits mais aussi de leurs stocks
                   </p>
+                  <div class="mt-5 grid sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+                    <div class="dark:text-white border border-gray-200 shadow-2xs rounded-xl text-center">
+                      Javascript
+                    </div>
+                    <div class="dark:text-white border border-gray-200 shadow-2xs rounded-xl text-center">
+                      Fastify
+                    </div>
+                    <div class="dark:text-white border border-gray-200 shadow-2xs rounded-xl text-center">
+                      MySQL
+                    </div>
+                    <div class="dark:text-white border border-gray-200 shadow-2xs rounded-xl text-center">
+                      Tailwindcss
+                    </div>
+                    <div class="dark:text-white border border-gray-200 shadow-2xs rounded-xl text-center">
+                      ReactJs
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="img-card-container">
               <div
-                class="img-card relative max-w-full h-[360px] rounded-xl overflow-hidden cursor-pointer shadow-main"
+                class="img-card relative max-w-full h-[270px] rounded-xl overflow-hidden cursor-pointer shadow-main"
               >
                 <div class="overlay"></div>
                 <div class="info absolute bottom-0 left-0 text-white m-5">
-                  <h3 class="text-2xl">Web Design</h3>
-                  <span class="text-lg">youtube</span>
+                  <h3 class="text-2xl">Spring JWT Auth</h3>
                 </div>
                 <img
-                  class="w-full h-full object-cover"
-                  src="./assets/image/image_2.jpg"
-                  alt="Image 7"
+                  class="w-full h-full"
+                  src="./assets/image/spring-jwt.png"
+                  alt="Spring Boot Jwt Project Image"
                 />
               </div>
-              <div
-                class="portfolio-modal z-[99999] fixed w-full top-0 left-0 h-[100vh] flex justify-center items-center backdrop-blur-[20px]"
-              >
-                <div
-                  class="portfolio-modal-body relative bg-white dark:bg-dark-modal-color max-w-[600px] m-5 p-10 rounded-xl shadow-main"
-                >
-                  <i
-                    class="dark:text-white text-2xl fa-solid fa-times portfolio-close-btn absolute top-0 right-0 m-5 cursor-pointer"
-                  ></i>
-                  <h3 class="text-2xl dark:text-white">Web Design</h3>
+              <div class="portfolio-modal z-[99999] fixed w-full top-0 left-0 h-[100vh] flex justify-center items-center backdrop-blur-[20px]">
+                <div class="portfolio-modal-body relative bg-white dark:bg-dark-modal-color max-w-[600px] m-5 p-10 rounded-xl shadow-main">
+                  <i class="dark:text-white hover:text-[#dc3545] text-2xl fa-solid fa-times portfolio-close-btn absolute top-0 right-0 m-5 cursor-pointer"></i>
+                  <div class="flex justify-between items-center">
+                    <h3 class="text-2xl dark:text-white">Spring JWT Auth</h3>
+                    <a href="https://github.com/NyHasintsoa/Spring-JWT-User-Auth" class="px-3 py-2.5 border border-third rounded-xl dark:text-white dark:hover:text-primary dark:hover:bg-white hover:text-white hover:bg-primary transition-colors duration-300">
+                      <i class="fa-brands fa-xl fa-github"></i>
+                      Code Source
+                    </a>
+                  </div>
                   <img
                     class="w-full my-5 rounded-xl"
-                    src="./assets/image/image_2.jpg"
-                    alt=""
+                    src="./assets/image/spring-jwt.png"
+                    alt="Spring Boot Jwt Project Image"
                   />
                   <p class="dark:text-white">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Aperiam at corporis dolor dolore doloribus eaque eos illo
-                    officiis sit vel! Accusamus, accusantium, culpa distinctio
-                    eligendi et itaque modi nam obcaecati odit possimus,
-                    reiciendis suscipit tempore tenetur!
+                    (projet personnel)
+                    <br>
+                    Authentification de l'utilisateur par connexion JWT, suivi d'un interface avec React
                   </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="img-card-container">
-              <div
-                class="img-card relative max-w-full h-[360px] rounded-xl overflow-hidden cursor-pointer shadow-main"
-              >
-                <div class="overlay"></div>
-                <div class="info absolute bottom-0 left-0 text-white m-5">
-                  <h3 class="text-2xl">Web Design</h3>
-                  <span class="text-lg">youtube</span>
-                </div>
-                <img
-                  class="w-full h-full object-cover"
-                  src="./assets/image/image_3.jpg"
-                  alt="Image 7"
-                />
-              </div>
-              <div
-                class="portfolio-modal z-[99999] fixed w-full top-0 left-0 h-[100vh] flex justify-center items-center backdrop-blur-[20px]"
-              >
-                <div
-                  class="portfolio-modal-body relative bg-white dark:bg-dark-modal-color max-w-[600px] m-5 p-10 rounded-xl shadow-main"
-                >
-                  <i
-                    class="dark:text-white text-2xl fa-solid fa-times portfolio-close-btn absolute top-0 right-0 m-5 cursor-pointer"
-                  ></i>
-                  <h3 class="text-2xl dark:text-white">Web Design</h3>
-                  <img
-                    class="w-full my-5 rounded-xl"
-                    src="./assets/image/image_3.jpg"
-                    alt=""
-                  />
-                  <p class="dark:text-white">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Aperiam at corporis dolor dolore doloribus eaque eos illo
-                    officiis sit vel! Accusamus, accusantium, culpa distinctio
-                    eligendi et itaque modi nam obcaecati odit possimus,
-                    reiciendis suscipit tempore tenetur!
-                  </p>
+                  <div class="mt-5 grid md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+                    <div class="dark:text-white border border-gray-200 shadow-2xs rounded-xl text-center">
+                      Java
+                    </div>
+                    <div class="dark:text-white border border-gray-200 shadow-2xs rounded-xl text-center">
+                      Spring Boot
+                    </div>
+                    <div class="dark:text-white border border-gray-200 shadow-2xs rounded-xl text-center">
+                      PostgreSQL
+                    </div>
+                    <div class="dark:text-white border border-gray-200 shadow-2xs rounded-xl text-center">
+                      Bootstrap
+                    </div>
+                    <div class="dark:text-white border border-gray-200 shadow-2xs rounded-xl text-center">
+                      ReactJs
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="img-card-container">
               <div
-                class="img-card relative max-w-full h-[360px] rounded-xl overflow-hidden cursor-pointer shadow-main"
+                class="img-card relative max-w-full h-[270px] rounded-xl overflow-hidden cursor-pointer shadow-main"
               >
                 <div class="overlay"></div>
                 <div class="info absolute bottom-0 left-0 text-white m-5">
-                  <h3 class="text-2xl">Web Design</h3>
-                  <span class="text-lg">youtube</span>
+                  <h3 class="text-2xl">Product Manager</h3>
                 </div>
                 <img
-                  class="w-full h-full object-cover"
-                  src="./assets/image/image_4.jpg"
-                  alt="Image 7"
+                  class="w-full h-full"
+                  src="./assets/image/django-project.png"
+                  alt="Django Project Image"
                 />
               </div>
               <div
@@ -985,103 +690,38 @@
                 <div
                   class="portfolio-modal-body relative bg-white dark:bg-dark-modal-color max-w-[600px] m-5 p-10 rounded-xl shadow-main"
                 >
-                  <i
-                    class="dark:text-white text-2xl fa-solid fa-times portfolio-close-btn absolute top-0 right-0 m-5 cursor-pointer"
-                  ></i>
-                  <h3 class="text-2xl dark:text-white">Web Design</h3>
+                  <i class="dark:text-white hover:text-[#dc3545] text-2xl fa-solid fa-times portfolio-close-btn absolute top-0 right-0 m-5 cursor-pointer"></i>
+                  <div class="flex justify-between items-center">
+                    <h3 class="text-2xl dark:text-white">Product Manager</h3>
+                    <a href="https://github.com/NyHasintsoa/CRUD-Product-Django" class="px-3 py-2.5 border border-third rounded-xl dark:text-white dark:hover:text-primary dark:hover:bg-white hover:text-white hover:bg-primary transition-colors duration-300">
+                      <i class="fa-brands fa-xl fa-github"></i>
+                      Code Source
+                    </a>
+                  </div>
                   <img
                     class="w-full my-5 rounded-xl"
-                    src="./assets/image/image_4.jpg"
-                    alt=""
+                    src="./assets/image/django-project.png"
+                    alt="Django Project Image"
                   />
                   <p class="dark:text-white">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Aperiam at corporis dolor dolore doloribus eaque eos illo
-                    officiis sit vel! Accusamus, accusantium, culpa distinctio
-                    eligendi et itaque modi nam obcaecati odit possimus,
-                    reiciendis suscipit tempore tenetur!
+                    (projet personnel)
+                    <br>
+                    Affichage, Ajout, Création et Suppréssion (CRUD) des produits, avec pagination et recherche, implémenter d'un authentification implémenter par Django
                   </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="img-card-container">
-              <div
-                class="img-card relative max-w-full h-[360px] rounded-xl overflow-hidden cursor-pointer shadow-main"
-              >
-                <div class="overlay"></div>
-                <div class="info absolute bottom-0 left-0 text-white m-5">
-                  <h3 class="text-2xl">Web Design</h3>
-                  <span class="text-lg">youtube</span>
-                </div>
-                <img
-                  class="w-full h-full object-cover"
-                  src="./assets/image/image_5.jpg"
-                  alt="Image 7"
-                />
-              </div>
-              <div
-                class="portfolio-modal z-[99999] fixed w-full top-0 left-0 h-[100vh] flex justify-center items-center backdrop-blur-[20px]"
-              >
-                <div
-                  class="portfolio-modal-body relative bg-white dark:bg-dark-modal-color max-w-[600px] m-5 p-10 rounded-xl shadow-main"
-                >
-                  <i
-                    class="dark:text-white text-2xl fa-solid fa-times portfolio-close-btn absolute top-0 right-0 m-5 cursor-pointer"
-                  ></i>
-                  <h3 class="text-2xl dark:text-white">Web Design</h3>
-                  <img
-                    class="w-full my-5 rounded-xl"
-                    src="./assets/image/image_5.jpg"
-                    alt=""
-                  />
-                  <p class="dark:text-white">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Aperiam at corporis dolor dolore doloribus eaque eos illo
-                    officiis sit vel! Accusamus, accusantium, culpa distinctio
-                    eligendi et itaque modi nam obcaecati odit possimus,
-                    reiciendis suscipit tempore tenetur!
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="img-card-container">
-              <div
-                class="img-card relative max-w-full h-[360px] rounded-xl overflow-hidden cursor-pointer shadow-main"
-              >
-                <div class="overlay"></div>
-                <div class="info absolute bottom-0 left-0 text-white m-5">
-                  <h3 class="text-2xl">Web Design</h3>
-                  <span class="text-lg">youtube</span>
-                </div>
-                <img
-                  class="w-full h-full object-cover"
-                  src="./assets/image/image_6.jpg"
-                  alt="Image 7"
-                />
-              </div>
-              <div
-                class="portfolio-modal z-[99999] fixed w-full top-0 left-0 h-[100vh] flex justify-center items-center backdrop-blur-[20px]"
-              >
-                <div
-                  class="portfolio-modal-body relative bg-white dark:bg-dark-modal-color max-w-[600px] m-5 p-10 rounded-xl shadow-main"
-                >
-                  <i
-                    class="dark:text-white fa-solid text-2xl fa-times portfolio-close-btn absolute top-0 right-0 m-5 cursor-pointer"
-                  ></i>
-                  <h3 class="text-2xl dark:text-white">Web Design</h3>
-                  <img
-                    class="w-full my-5 rounded-xl"
-                    src="./assets/image/image_6.jpg"
-                    alt=""
-                  />
-                  <p class="dark:text-white">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Aperiam at corporis dolor dolore doloribus eaque eos illo
-                    officiis sit vel! Accusamus, accusantium, culpa distinctio
-                    eligendi et itaque modi nam obcaecati odit possimus,
-                    reiciendis suscipit tempore tenetur!
-                  </p>
+                  <div class="mt-5 grid md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+                    <div class="dark:text-white border border-gray-200 shadow-2xs rounded-xl text-center">
+                      Python
+                    </div>
+                    <div class="dark:text-white border border-gray-200 shadow-2xs rounded-xl text-center">
+                      Django
+                    </div>
+                    <div class="dark:text-white border border-gray-200 shadow-2xs rounded-xl text-center">
+                      SQLite
+                    </div>
+                    <div class="dark:text-white border border-gray-200 shadow-2xs rounded-xl text-center">
+                      Bootstrap
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1090,67 +730,56 @@
       </div>
     </section>
 
-    <section
-      class="mx-auto max-w-[1150px] pt-20 lg:pt-24 px-8 pb-8"
-      id="contact"
-    >
+    <section class="mx-auto max-w-[1150px] pt-20 lg:pt-24 px-8 pb-8" id="contact">
       <div class="relative flex justify-center items-center flex-col">
-        <h1 class="section-title-01">Contact Me</h1>
-        <h2 class="section-title-02 dark:text-white">Contact Me</h2>
+        <h1 class="section-title-01">Contact</h1>
+        <h2 class="section-title-02 dark:text-white">Contact</h2>
         <div class="w-full flex justify-between flex-col lg:flex-row gap-x-10">
-          <div class="contact-left">
-            <h2 class="text-4xl font-extrabold mb-10 dark:text-white">
-              Let's discuss your project
+          <div class="min-w-80 border-0 border-third rounded-lg shadow-main p-5">
+            <h2 class="text-xl font-semibold dark:text-white">
+              Discutons de votre projet
             </h2>
-            <ul class="contact-list">
+            <p class="text-third dark:text-dark-third my-4 text-sm text-justify">
+              Vous pouvez me contacter grâce à ces informations
+            </p>
+            <ul>
               <li class="mb-10">
-                <h3 class="text-xl font-semibold mb-2.5 dark:text-white">
-                  <i
-                    class="fa-solid fa-phone text-secondary mr-2.5 text-xl"
-                  ></i>
-                  Phone
-                </h3>
-                <span class="text-third dark:text-dark-third ml-10"
-                  >+261 12 34 567 89</span
-                >
+                <div class="mb-2.5 flex items-center">
+                  <span class="bg-secondary text-secondary hover:text-white bg-opacity-15 hover:bg-opacity-100 flex justify-center items-center w-10 h-10 rounded-full transition-colors duration-300">
+                    <i class="fa-solid fa-phone text-xl"></i>
+                  </span>
+                  <h6 class="text-xl font-semibold ml-4 dark:text-white">Phone</h6>
+                </div>
+                <span class="text-third dark:text-dark-third">
+                  +261 34 03 730 10
+                </span>
               </li>
               <li class="mb-10">
-                <h3 class="text-xl font-semibold mb-2.5 dark:text-white">
-                  <i
-                    class="fa-solid fa-envelope text-secondary mr-2.5 text-xl"
-                  ></i>
-                  Email Address
-                </h3>
-                <span class="text-third dark:text-dark-third ml-10"
-                  ><a
-                    href="mailto:rakoto.paul@domain.com"
-                    class="text-third dark:text-dark-third"
-                    >rakoto.paul@domain.com</a
-                  ></span
-                >
+                <div class="mb-2.5 flex items-center">
+                  <span class="bg-secondary text-secondary hover:text-white bg-opacity-15 hover:bg-opacity-100 flex justify-center items-center w-10 h-10 rounded-full transition-colors duration-300">
+                    <i class="fa-solid fa-envelope text-xl"></i>
+                  </span>
+                  <h6 class="text-xl font-semibold ml-4 dark:text-white">Email Address</h6>
+                </div>
+                <span class="text-third dark:text-dark-third">
+                  <a href="mailto:hasinaramalanjaona@gmail.com" class="text-third dark:text-dark-third">
+                    hasinaramalanjaona@gmail.com
+                  </a>
+                </span>
               </li>
-              <li class="mb-10">
-                <h3 class="text-xl font-semibold mb-2.5 dark:text-white">
-                  <i
-                    class="fa-solid fa-map-marked-alt text-secondary mr-2.5 text-xl"
-                  ></i>
-                  Official Address
-                </h3>
-                <span class="text-third dark:text-dark-third ml-10"
-                  >Andavamamba Antananarivo Madagascar</span
-                >
+              <li>
+                <div class="mb-2.5 flex items-center">
+                  <span class="bg-secondary text-secondary hover:text-white bg-opacity-15 hover:bg-opacity-100 flex justify-center items-center w-10 h-10 rounded-full transition-colors duration-300">
+                    <i class="fa-solid fa-map-marked-alt text-xl"></i>
+                  </span>
+                  <h6 class="text-xl font-semibold ml-4 dark:text-white">Official Address</h6>
+                </div>
+                <span class="text-third dark:text-dark-third">Tananarive Madagascar</span>
               </li>
             </ul>
           </div>
-          <div class="contact-right">
-            <p class="text-third dark:text-dark-third mb-8 text-[1.6rem]">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Dignissimos, labore?<br />
-              <span class="text-primary font-bold dark:text-white"
-                >Lorem ipsum dolor sit amet.</span
-              >
-            </p>
-            <form action="" class="contact-form">
+          <div class="w-full mt-10 lg:mt-0">
+            <form class="contact-form">
               <div class="relative input-form mb-5">
                 <input
                   class="dark:text-white w-full text-primary bg-transparent-color-2 focus:bg-transparent valid:bg-transparent text-base pt-[15px] pr-[40px] pb-[15px] pl-[20px] rounded-md duration-500"
@@ -1163,20 +792,11 @@
                 <label
                   class="dark:text-white absolute top-[16px] left-[20px] pointer-events-none duration-500"
                   for="inputName"
-                  >Name *</label
-                >
-                <div
-                  class="absolute top-0 right-0 bg-secondary w-0 h-0.5 top-line duration-500 rounded-md"
-                ></div>
-                <div
-                  class="absolute top-0 right-0 bg-secondary w-0.5 h-0 right-line duration-500 rounded-md"
-                ></div>
-                <div
-                  class="absolute bottom-0 left-0 bg-secondary w-0 h-0.5 bottom-line duration-500 rounded-md"
-                ></div>
-                <div
-                  class="absolute bottom-0 left-0 bg-secondary w-0.5 h-0 left-line duration-500 rounded-md"
-                ></div>
+                >Nom <span class="text-[#cd2828]">*</span></label>
+                <div class="absolute top-0 right-0 bg-secondary w-0 h-0.5 top-line duration-500 rounded-md"></div>
+                <div class="absolute top-0 right-0 bg-secondary w-0.5 h-0 right-line duration-500 rounded-md"></div>
+                <div class="absolute bottom-0 left-0 bg-secondary w-0 h-0.5 bottom-line duration-500 rounded-md"></div>
+                <div class="absolute bottom-0 left-0 bg-secondary w-0.5 h-0 left-line duration-500 rounded-md"></div>
               </div>
               <div
                 class="flex justify-between flex-col lg:flex-row lg:gap-[4%]"
@@ -1193,20 +813,12 @@
                   <label
                     class="dark:text-white absolute top-[16px] left-[20px] pointer-events-none duration-500"
                     for="inputEmail"
-                    >Email *</label
-                  >
-                  <div
-                    class="absolute top-0 right-0 bg-secondary w-0 h-0.5 top-line duration-500 rounded-md"
-                  ></div>
-                  <div
-                    class="absolute top-0 right-0 bg-secondary w-0.5 h-0 right-line duration-500 rounded-md"
-                  ></div>
-                  <div
-                    class="absolute bottom-0 left-0 bg-secondary w-0 h-0.5 bottom-line duration-500 rounded-md"
-                  ></div>
-                  <div
-                    class="absolute bottom-0 left-0 bg-secondary w-0.5 h-0 left-line duration-500 rounded-md"
-                  ></div>
+                  >Email <span class="text-[#cd2828]">*</span></label>
+
+                  <div class="absolute top-0 right-0 bg-secondary w-0 h-0.5 top-line duration-500 rounded-md"></div>
+                  <div class="absolute top-0 right-0 bg-secondary w-0.5 h-0 right-line duration-500 rounded-md"></div>
+                  <div class="absolute bottom-0 left-0 bg-secondary w-0 h-0.5 bottom-line duration-500 rounded-md"></div>
+                  <div class="absolute bottom-0 left-0 bg-secondary w-0.5 h-0 left-line duration-500 rounded-md"></div>
                 </div>
                 <div class="relative input-form w-full mb-5">
                   <input
@@ -1220,20 +832,11 @@
                   <label
                     class="dark:text-white absolute top-[16px] left-[20px] pointer-events-none duration-500"
                     for="inputSubject"
-                    >Subject *</label
-                  >
-                  <div
-                    class="absolute top-0 right-0 bg-secondary w-0 h-0.5 top-line duration-500 rounded-md"
-                  ></div>
-                  <div
-                    class="absolute top-0 right-0 bg-secondary w-0.5 h-0 right-line duration-500 rounded-md"
-                  ></div>
-                  <div
-                    class="absolute bottom-0 left-0 bg-secondary w-0 h-0.5 bottom-line duration-500 rounded-md"
-                  ></div>
-                  <div
-                    class="absolute bottom-0 left-0 bg-secondary w-0.5 h-0 left-line duration-500 rounded-md"
-                  ></div>
+                  >Sujet <span class="text-[#cd2828]">*</span></label>
+                  <div class="absolute top-0 right-0 bg-secondary w-0 h-0.5 top-line duration-500 rounded-md"></div>
+                  <div class="absolute top-0 right-0 bg-secondary w-0.5 h-0 right-line duration-500 rounded-md"></div>
+                  <div class="absolute bottom-0 left-0 bg-secondary w-0 h-0.5 bottom-line duration-500 rounded-md"></div>
+                  <div class="absolute bottom-0 left-0 bg-secondary w-0.5 h-0 left-line duration-500 rounded-md"></div>
                 </div>
               </div>
               <div class="relative mb-5 message-form">
@@ -1247,27 +850,18 @@
                 <label
                   class="dark:text-white absolute top-[16px] left-[20px] pointer-events-none duration-500"
                   for="inputMessage"
-                  >Message *</label
-                >
-                <div
-                  class="absolute top-0 right-0 bg-secondary w-0 h-0.5 top-line duration-500 rounded-md"
-                ></div>
-                <div
-                  class="absolute top-0 right-0 bg-secondary w-0.5 h-0 right-line duration-500 rounded-md"
-                ></div>
-                <div
-                  class="absolute bottom-0 left-0 bg-secondary w-0 h-0.5 bottom-line duration-500 rounded-md"
-                ></div>
-                <div
-                  class="absolute bottom-0 left-0 bg-secondary w-0.5 h-0 left-line duration-500 rounded-md"
-                ></div>
+                >Message <span class="text-[#cd2828]">*</span></label>
+                <div class="absolute top-0 right-0 bg-secondary w-0 h-0.5 top-line duration-500 rounded-md"></div>
+                <div class="absolute top-0 right-0 bg-secondary w-0.5 h-0 right-line duration-500 rounded-md"></div>
+                <div class="absolute bottom-0 left-0 bg-secondary w-0 h-0.5 bottom-line duration-500 rounded-md"></div>
+                <div class="absolute bottom-0 left-0 bg-secondary w-0.5 h-0 left-line duration-500 rounded-md"></div>
               </div>
               <button
                 id="submitBtn"
                 type="submit"
                 class="w-full md:w-auto border-0 font-medium bg-secondary text-white text-base inline-block tracking-widest py-5 px-8 rounded-lg hover:bg-hover-primary"
               >
-                <span class="mr-3">Send Message</span>
+                <span class="mr-3">Envoyer Message</span>
                 <i class="fa-solid fa-paper-plane"></i>
               </button>
             </form>
@@ -1277,88 +871,51 @@
     </section>
 
     <footer class="py-20 sm:py-24">
-      <div
-        class="pt-20 mx-auto max-w-7xl px-6 lg:px-8 border-t-third dark:border-t-white border-t-[0.5px]"
-      >
+      <div class="pt-20 mx-auto max-w-7xl px-6 lg:px-8 border-t-third dark:border-t-white border-t-[0.5px]">
         <h1 class="text-center dark:text-white text-2xl font-semibold mb-10">
-          NamePortfolio
+          Ny Aina Hasintsoa
         </h1>
-        <ul
-          class="text-primary dark:text-white font-light flex justify-center flex-wrap gap-y-10 gap-x-20"
-        >
+        <ul class="text-primary dark:text-white font-light flex justify-center flex-wrap gap-y-10 gap-x-20">
           <li>
-            <a
-              class="text-primary dark:text-white hover:text-secondary dark:hover:text-dark-secondary duration-300 ease-linear"
-              href="#home"
-              >Home</a
-            >
+            <a class="text-primary dark:text-white hover:text-secondary dark:hover:text-dark-secondary duration-300 ease-linear" href="#home">
+              Accueil
+            </a>
           </li>
           <li>
-            <a
-              class="text-primary dark:text-white hover:text-secondary dark:hover:text-dark-secondary duration-300 ease-linear"
-              href="#about"
-              >About</a
-            >
+            <a class="text-primary dark:text-white hover:text-secondary dark:hover:text-dark-secondary duration-300 ease-linear" href="#about">
+              A propos
+            </a>
           </li>
           <li>
-            <a
-              class="text-primary dark:text-white hover:text-secondary dark:hover:text-dark-secondary duration-300 ease-linear"
-              href="#skills"
-              >Skills</a
-            >
+            <a class="text-primary dark:text-white hover:text-secondary dark:hover:text-dark-secondary duration-300 ease-linear" href="#skills">
+              Compétences
+            </a>
           </li>
           <li>
-            <a
-              class="text-primary dark:text-white hover:text-secondary dark:hover:text-dark-secondary duration-300 ease-linear"
-              href="#services"
-              >Services</a
-            >
+            <a class="text-primary dark:text-white hover:text-secondary dark:hover:text-dark-secondary duration-300 ease-linear" href="#portfolio">
+              Portfolio
+            </a>
           </li>
           <li>
-            <a
-              class="text-primary dark:text-white hover:text-secondary dark:hover:text-dark-secondary duration-300 ease-linear"
-              href="#portfolio"
-              >Portfolio</a
-            >
-          </li>
-          <li>
-            <a
-              class="text-primary dark:text-white hover:text-secondary dark:hover:text-dark-secondary duration-300 ease-linear"
-              href="#contact"
-              >Contact</a
-            >
+            <a class="text-primary dark:text-white hover:text-secondary dark:hover:text-dark-secondary duration-300 ease-linear" href="#contact">
+              Contact
+            </a>
           </li>
         </ul>
         <ul class="flex justify-center flex-wrap gap-y-5 gap-x-10 my-10">
           <li>
-            <a
-              class="text-primary dark:text-white hover:text-secondary dark:hover:text-dark-secondary duration-300 ease-linear"
-              href="#"
-              ><i class="fa-brands fa-xl fa-facebook"></i
-            ></a>
+            <a class="text-primary dark:text-white hover:text-secondary dark:hover:text-dark-secondary duration-300 ease-linear" href="https://www.linkedin.com/in/ny-aina-hasintsoa-79b7b4304">
+              <i class="fa-brands fa-xl fa-linkedin"></i>
+            </a>
           </li>
           <li>
-            <a
-              class="text-primary dark:text-white hover:text-secondary dark:hover:text-dark-secondary duration-300 ease-linear"
-              href="#"
-              ><i class="fa-brands fa-xl fa-linkedin"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              class="text-primary dark:text-white hover:text-secondary dark:hover:text-dark-secondary duration-300 ease-linear"
-              href="#"
-              ><i class="fa-brands fa-xl fa-github"></i
-            ></a>
+            <a class="text-primary dark:text-white hover:text-secondary dark:hover:text-dark-secondary duration-300 ease-linear" href="https://github.com/NyHasintsoa">
+              <i class="fa-brands fa-xl fa-github"></i>
+            </a>
           </li>
         </ul>
-        <div
-          class="text-primary dark:text-white font-light text-sm md:text-lg text-center"
-        >
-          Copyright &copy;
-          <script>
-            document.write(new Date().getFullYear());
-          </script>
+        <div class="text-primary dark:text-white font-light text-sm md:text-lg text-center">
+          Copyright &copy; 2025
           Ny Aina Hasintsoa, All rights reserved.
         </div>
       </div>
